@@ -2,6 +2,7 @@
 这是一个根据模仿google的新logo所做出来的动画。
 
 ![](http://7xo6vj.com1.z0.glb.clouddn.com/15-11-12/44412013.jpg)
+![](http://7xo6vj.com1.z0.glb.clouddn.com/15-11-12/86761997.jpg)
 
 这动画是重写View的onDraw方法做成的。
 
