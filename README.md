@@ -22,8 +22,9 @@ It can be add to most of layout, and has the following features:
           app:speed_factor="0.8"
           />
           
-It is my first time to submit my work, so there must be a lot of mistakes, 
-If there's any suggestion. Please contact me, thanks.
-  
+It is my first time to submit my work, so there must be a lot of mistakes.
+
+If there's any suggestion, please contact me, thanks.
+
 Fork is welcome, and improved the animation.
   
