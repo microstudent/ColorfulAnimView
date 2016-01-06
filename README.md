@@ -3,7 +3,7 @@ This is an animation which is similar to Google's new Logo in a way.
 
 ##DEMO
 
-![](http://pan.plyz.net/d.asp?u=906443026&p=1.gif)
+![](https://farm2.staticflickr.com/1535/23580321973_1fc797c2d4_o.gif)
 
 It can be add to most of layout, and has the following features:
 
