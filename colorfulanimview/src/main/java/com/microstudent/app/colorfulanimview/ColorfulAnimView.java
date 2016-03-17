@@ -139,13 +139,15 @@ public class ColorfulAnimView extends View implements RoundBean.Refresher{
         post(new Runnable() {
             @Override
             public void run() {
-                animatorSet.start();
+                if(animatorSet!=null)
+                    animatorSet.start();
             }
         });
     }
 
     public void stopAnim(){
-        animatorSet.cancel();
+        if(animatorSet!=null)
+            animatorSet.cancel();
     }
 
     public void setSpeedFactor(float factor) {
