@@ -81,8 +81,6 @@ public class ColorfulAnimView extends View implements RoundBean.Refresher{
                 createAnimator();
             }
         });
-
-
         a.recycle();
     }
 
@@ -138,7 +136,16 @@ public class ColorfulAnimView extends View implements RoundBean.Refresher{
     }
 
     public void startAnim() {
-        animatorSet.start();
+        post(new Runnable() {
+            @Override
+            public void run() {
+                animatorSet.start();
+            }
+        });
+    }
+
+    public void stopAnim(){
+        animatorSet.cancel();
     }
 
     public void setSpeedFactor(float factor) {
@@ -197,6 +204,12 @@ public class ColorfulAnimView extends View implements RoundBean.Refresher{
         animatorSet.play(animatorAlphaIn1).after(preAnimDuration + (2 * alphaInDuration));
 
         animatorSet.setStartDelay(200);//以上动画延时200毫秒执行，解决一开始的缩放动画卡顿问题
+    }
+
+    @Override
+    protected void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+        stopAnim();
     }
 
     /**

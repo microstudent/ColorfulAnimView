@@ -44,12 +44,8 @@ public class AnimProgressDialog extends Dialog {
             titleView.setText(title);
         }
         animView = (ColorfulAnimView) findViewById(R.id.view_anim);
-        titleView.post(new Runnable() {
-            @Override
-            public void run() {
-                animView.startAnim();
-            }
-        });
+        animView.startAnim();
+
     }
 
 }
